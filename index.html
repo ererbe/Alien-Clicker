@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title>
+			Alien Clicker
+		</title>
+		<style>
+img {
+border: none;
+padding: 0.8em;
+float:left;
+} 
+		</style>
+	</head>
+	<body bgcolor="#000000" text="#FFFFFF">
+<table border="0" width="100%">
+ <colgroup> <col width="25%"> <col width="50%"> <col width="25%"> </colgroup>
+	<tr>
+		<th VALIGN="TOP">
+			<center><h1>Aliens: <span id="aliens">0</span></center></h1>
+			<br />
+			<center><button style="background: transparent; border: none;" onclick="eggClick(1)"><img src="./Images/Egg.png"></button></center>
+			<br />
+		</th>
+		<th VALIGN="TOP">
+			<p align="left">
+				<img src="./Images/alienEgg.png" width="50" height="50">
+				<button onclick="buyEgg()">buy Egg</button>
+				<br />
+				Eggs: <span id="eggs">0</span> =====> Every egg produce every 10 secound 1 Alien. (0,1ApS)
+				<br />
+				Egg cost: <span id="eggCost">10</span>
+			<br />
+			<br />
+				<img src="./Images/alienBaby.png" width="50" height="50">
+				<button onclick="buyFacehugger()">buy Alien Baby</button>
+				<br />
+				Alien Babys: <span id="facehuggers">0</span> =====> Every alien baby produce every 2 secounds 1 Alien. (0,5ApS)
+				<br />
+				Alien Baby cost: <span id="facehuggerCost">100</span>
+			<br />
+			<br />
+				<img src="./Images/alienLittle.png" width="50" height="50">
+				<button onclick="buyChestburster()">buy little Alien</button>
+				<br />
+				little Aliens: <span id="chestbursters">0</span>  =====> Every little alien produce all 0,25 secounds 1 Alien. (4ApS)
+				<br />
+				little Alien cost: <span id="chestbursterCost">500</span>
+			<br />
+			<br />
+				<img src="./Images/alienNormal.png" width="50" height="50">
+				<button onclick="buyXenomorph()">buy Alien</button>
+				<br />
+				Aliens: <span id="xenomorphs">0</span> =====> Every Alien produce every 0,2 secounds 2 Aliens. (10ApS)
+				<br />
+				Alien cost: <span id="xenomorphCost">3000</span>
+			<br />
+			<br />
+				<img src="./Images/alienQueen.png" width="50" height="50">
+				<button onclick="buyQueen()">buy Alien Queen</button>
+				<br />
+				Alien Queens: <span id="queens">0</span> =====> Every alien queen produce every 0,1 secounds 4 Aliens. (40ApS)
+				<br />
+				Alien Queen cost: <span id="queenCost">10000</span>
+			<br />
+			<br />
+				<img src="./Images/spaceship.png" width="50" height="50">
+				<button onclick="buyShip()">infect Spaceship</button>
+				<br />
+				Spaceships: <span id="queens">0</span> =====> Every spaceship produce every 0,1 secounds 10 Aliens. (100ApS)
+				<br />
+				Spaceship cost: <span id="shipCost">40000</span>
+			<br />
+			<br />
+				<img src="./Images/spacestation.png" width="50" height="50">
+				<button onclick="buyStation()">infect Spacestation</button>
+				<br />
+				Spacestations: <span id="stations">0</span> =====> Every spacestation produce every 0,025 secounds 10 Aliens. (400ApS)
+				<br />
+				Spacestation cost: <span id="shipCost">200000</span>
+			<br />
+			<br />
+				<img src="./Images/littleplanet.png" width="50" height="50">
+				<button onclick="buyKpla()">infect little Planet</button>
+				<br />
+				little Planets: <span id="kplas">0</span> =====> Every little planet produce every secound 6666 Aliens. (6666ApS)
+				<br />
+				little Planet cost: <span id="kplaCost">1666666</span>
+			<br />
+			<br />
+				<img src="./Images/Planetbig.png" width="50" height="50">
+				<button onclick="buyGpla()">infect big Planet</button>
+				<br />
+				big Planets: <span id="gplas">0</span> =====> Every big planet produce every secound 98765 Aliens. (98765ApS)
+				<br />
+				big Planet cost: <span id="gplaCost">123456789</span>
+			<br />
+			<br />
+				<img src="./Images/starsystem.png" width="50" height="50">
+				<button onclick="buySystem()">infect Starsystem</button>
+				<br />
+				Starsystems: <span id="systems">0</span> =====> Every starsystem produce every secound 999999 Aliens. (999999ApS)
+				<br />
+				Starsystem cost: <span id="systemCost">3999999999</span>
+			<br />
+			<br />
+				<img src="./Images/Galaxy.png" width="50" height="50">
+				<button onclick="buyGalaxy()">infect Galaxy</button>
+				<br />
+				Galaxys: <span id="galaxys">0</span> =====> Every galaxy produce every 0,001 secounds 10000 Aliens. (10000000ApS)
+				<br />
+				Galaxy cost: <span id="galaxyCost">50000000000</span>
+			<br />
+			<br />
+				<img src="./Images/universe.png" width="50" height="50">
+				<button onclick="buyUniverse()">infect Universe</button>
+				<br />
+				Universes: <span id="universes">0</span> =====> Every universe produve every 0,001 secounds 150000 Aliens. (150000000ApS)
+				<br />
+				Universe cost: <span id="universeCost">1000000000000</span>
+			</p>
+		</th>
+		<th VALIGN="TOP"><p align="right">
+<FORM>
+<INPUT TYPE="button" onClick="history.go(0)" VALUE="Reset">
+</FORM>
+<!--				<button onclick="cheat()">100000000000000Aliens</button>-->
+		</p></th>
+	</tr>
+</table>
+			<h6> version 3.0 ----------- last update: 17.07.2017</h6> 
+			<br />
+			<h6> planned next: real language system and saving </h6>
+			<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
